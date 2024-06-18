@@ -15,9 +15,9 @@ def load_data(directory, name, year, comparison):
 
             # Apply the comparison filter
             if (
-                (comparison == "before" and file_year <= year)
+                (comparison == "and before" and file_year <= year)
                 or (comparison == "equal" and file_year == year)
-                or (comparison == "after" and file_year >= year)
+                or (comparison == "and after" and file_year >= year)
             ):
                 # Read the data from the file
                 yearly_data = pd.read_csv(
@@ -63,7 +63,7 @@ def main():
         "Enter the year:", min_value=1880, max_value=2023, value=2023
     )
     comparison = st.selectbox(
-        "Select comparison:", ["equal", "before", "after"], index=1
+        "Select comparison:", ["equal", "and before", "and after"], index=1
     )
 
     # Path to the local "names" directory
@@ -76,7 +76,7 @@ def main():
         )
 
         st.write(
-            f"Total number of babies named {name} {comparison} {year}: {total_babies}"
+            f"Total number of babies named {name} {year} {comparison}: {total_babies}"
         )
 
         # Visualization using Altair
