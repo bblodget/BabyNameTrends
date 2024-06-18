@@ -60,7 +60,7 @@ def main():
     # User inputs
     name = st.text_input("Enter the name:", "Brandon")
     year = st.number_input(
-        "Enter the year:", min_value=1880, max_value=2023, value=1970
+        "Enter the year:", min_value=1880, max_value=2023, value=2023
     )
     comparison = st.selectbox(
         "Select comparison:", ["equal", "before", "after"], index=1
