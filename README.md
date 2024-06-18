@@ -8,7 +8,7 @@ BabyNameTrends is a Streamlit app that allows users to explore historical trends
 - **Top Names:** Discover the top 10 boy and girl names for a selected year.
 - **Interactive Charts:** Hover over and click on the charts to see detailed data points.
 
-## Run BabyNameTrends WebApp Online
+## BabyNameTrends WebApp Online
 
 This app is hosted on the Streamlit cloud at:
 
