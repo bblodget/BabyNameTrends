@@ -19,26 +19,26 @@ The dataset used for this app is provided by the U.S. Social Security Administra
 To run this app locally, follow these steps:
 
 1. **Clone the repository:**
-   ...
+   ```
    git clone https://github.com/yourusername/baby-name-trends.git
    cd baby-name-trends
-   ...
+   ```
 
 2. **Create and activate a virtual environment:**
-   ...
+   ```
    python3 -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ...
+   ```
 
 3. **Install the required packages:**
-   ...
+   ```
    pip install -r requirements.txt
-   ...
+   ```
 
 4. **Run the app:**
-   ...
+   ```
    streamlit run app.py
-   ...
+   ```
 
 ## Usage
 
