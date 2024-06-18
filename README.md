@@ -20,8 +20,8 @@ To run this app locally, follow these steps:
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/baby-name-trends.git
-   cd baby-name-trends
+   git clone https://github.com/yourusername/BabyNameTrends.git
+   cd BabyNameTrends
    ```
 
 2. **Create and activate a virtual environment:**
