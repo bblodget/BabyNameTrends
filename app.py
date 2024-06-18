@@ -66,7 +66,13 @@ def main():
             chart = (
                 alt.Chart(grouped_data)
                 .mark_line(point=True)
-                .encode(x="Year", y="Count", tooltip=["Year", "Count"])
+                .encode(
+                    x=alt.X(
+                        "Year", axis=alt.Axis(format="d")
+                    ),  # Remove commas from years
+                    y="Count",
+                    tooltip=["Year", "Count"],
+                )
                 .interactive()
             )
 
